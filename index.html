@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Img/drum.png" type="image/x-icon">
+    <title>Bateria Virtual</title>
+</head>
+<body>
+
+    <main>
+        <section class="main-area">
+          <div class="key-mapa-area">
+            <h2>Mapa do Teclado</h2>
+            <ul class="key-mapa-lista">
+              <li>
+                <kbd class="key-codigo">E</kbd>
+                <span class="key-som">Prato de Ataque= Crash</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">R</kbd>
+                <span class="key-som">Prato de Condução= Ride</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">D</kbd>
+                <span class="key-som">Surdo= Floor tom</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">F</kbd>
+                <span class="key-som">Mid tom</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">K</kbd>
+                <span class="key-som">High tom</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">ES=Espaço</kbd>
+                <span class="key-som">Bumbo</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">L</kbd>
+                <span class="key-som">Caixa</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">I</kbd>
+                <span class="key-som">Chimbal= Hi-Hat Open</span>
+              </li>
+              <li>
+                <kbd class="key-codigo">O</kbd>
+                <span class="key-som">Chimbal= Hi-Hat Closed</span>
+              </li>
+            </ul>
+          </div>
+          <h1 class="titulo-principal">Bateria Virtual</h1>
+          <div class="drum-kit-area">
+            <img id="crash-ride" class="crash-cymbal" src="Img/crash.png" alt="Crash cymbal">
+            <img id="hihat-top" class="hihat-top-cymbal" src="Img/hihat-top.png" alt="Hi Hat cymbal">
+            <div data-key="76" class="key snare">
+              <kbd>L</kbd>
+            </div>
+            <div data-key="32" class="key kick">
+              <kbd>ES</kbd>
+            </div>
+            <div data-key="75" class="key tom-high">
+              <kbd>K</kbd>
+            </div>
+            <div data-key="70" class="key tom-mid">
+              <kbd>F</kbd>
+            </div>
+            <div data-key="68" class="key tom-low">
+              <kbd>D</kbd>
+            </div>
+            <div data-key="69" class="key crash">
+              <kbd>E</kbd>
+            </div>
+            <div data-key="82" class="key ride">
+              <kbd>R</kbd>
+            </div>
+            <div data-key="73" class="key hihat-open">
+              <kbd>I</kbd>
+            </div>
+            <div data-key="79" class="key hihat-close">
+              <kbd>O</kbd>
+            </div>
+            <img class="drum-kit" src="Img/drum-kit.png" alt="Drum Kit" />
+          </div>
+        </section>
+      </main>
+      <audio data-key="76" src="Audio/snare.wav"></audio>
+      <audio data-key="32" src="Audio/kick.wav"></audio>
+      <audio data-key="75" src="Audio/tom-high.wav"></audio>
+      <audio data-key="70" src="Audio/tom-mid.wav"></audio>
+      <audio data-key="68" src="Audio/tom-low.wav"></audio>
+      <audio data-key="69" src="Audio/crash.wav"></audio>
+      <audio data-key="82" src="Audio/ride.wav"></audio>
+      <audio data-key="73" src="Audio/hihat-open.wav"></audio>
+      <audio data-key="79" src="Audio/hihat-close.wav"></audio>
+
+
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Design Bateria Virtual Inspiração- Attekita Dev</p>
+            <p>Tutorial Jogo Bateria no Teclado com JavaScript Passo a Passo Inspiração - Feature Code - Luís Nogeira</p>            
+            <p>Áudios e Imagens da Bateria Inspiração- GitHub tluis9 - Luís Nogeira</p>
+            <h4>Desenvolvido por: Ana Caroline Candeias dos Santos</h4>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
